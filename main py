@@ -1,0 +1,137 @@
+import days
+def main():
+    c = open('calendar.txt', 'r')
+    num = c.readlines()
+    c.close()
+
+
+    print("============ Calendar Info =================")
+    print("===========================================")
+
+
+    for i in num:
+        if int(i) >= 1 and int(i) <= 31:
+            data = days.Jan(i,"January","MLK","Garnet")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+        elif int(i) > 31 and int(i) <= 59:
+            data = days.Feb(i,"February","Valentine\'s day","Amethyst")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+      
+        elif int(i) > 59 and int(i) <= 90:
+            data = days.March(i,"March","St. Patricks Day","Aquamarine")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+             
+        elif int(i) > 90 and int(i) <= 120:
+            data = days.April(i,"April","April Fools Day","Diamond")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+             
+        
+        elif int(i) > 120 and int(i) <= 151:
+            data = days.May(i,"May","Cinco de Mayo","Emerald")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+
+        elif int(i) > 151 and int(i) <= 181:
+            data = days.June(i,"June","Fathers Day","Pearl")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+
+        elif int(i) > 181 and int(i) <= 212:
+            data = days.July(i,"July","4th of July","Ruby")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+
+        elif int(i) > 212 and int(i) <= 243:
+            data = days.August(i,"August","Left Handers Day","Periot")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone()) 
+            print("\n")
+               
+        elif int(i) > 244 and int(i) <= 273:
+            data = days.September(i,"September","Labor Day","Sapphire")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n") 
+
+        elif int(i) > 274 and int(i) <= 304:
+            data = days.October(i,"October","Holloween","Tourmaline")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+              
+        elif int(i) > 304 and int(i) <= 334:
+            data = days.Nov(i,"November","Thanksgiving","Topaz")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+
+        elif int(i) > 334 and int(i) <= 365:
+            data = days.Dec(i,"December","Christmas","Tanzanite")
+            day = data.get_day()
+            month = data.get_month()
+            print("(Day", day[:-1], ')', month, "INFO")
+            print("-------------------------------------")
+            print('Major Holiday:', data.get_major_holiday())
+            print('Birth Stone:', data.get_birth_stone())
+            print("\n")
+        else:
+            print("Month does not exist")
+
+
+main()
+
